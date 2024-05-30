@@ -2,24 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 div#app{
     margin: 3rem;
-    color: #394a5e;
     font-size: 3rem;
 }
 
-main section.container{
-    max-width: 800px;
-    background-color: red;
-    margin: 0 auto;
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold ;
+}
+main{
+
+    max-width: 1000px;
+    background-image: url(https://www.salepepe.it/files/2017/11/lista-spesa.jpg);
+    height: 800px;
+    margin:0 auto;
     color: white;
+}
+
+main section.container{
+    width: 700px;
+    background-color:rgb(105, 43, 2);
+    margin: 0 auto;
+   
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+ul{
+    background-color: black;
 }
 
 ul li {
     list-style: none;
     text-align: center;
+   
+}
+
+ul li:hover{
+    font-size: 2.5rem;
+    color: red;
 }
 
 li i{
@@ -27,7 +56,7 @@ li i{
 }
 
 section.nuovo-elemento{
-    font-size: 1rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +66,16 @@ section.nuovo-elemento label{
     margin: 1rem 0;
 
 }
+
+button.button-add{
+    margin-left: 1rem;
+    padding: .6rem 1rem;
+}
+
+div input{
+    padding: .6rem 1rem;
+}
+
 
 .fatto{
     text-decoration: line-through;

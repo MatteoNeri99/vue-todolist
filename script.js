@@ -59,13 +59,17 @@ methods:{
 
     aggiungi:function(oggetto){
 
-        const nuovoOggetto={
-            text: oggetto,
-            done: "false"
-        } 
+        if((oggetto === "" ) == false){
+            const nuovoOggetto={
+                text: oggetto,
+                done: "false"
+            } 
+    
+            this.lista.push(nuovoOggetto)
 
-        this.lista.push(nuovoOggetto)
+        }
 
+    
     }
 }
 }).mount('#app')

@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -15,6 +18,10 @@
 
 
         <main>
+
+            <h1>Lista della spesa</h1>
+
+
             <section class="container">
                 <ul>
                     <li v-for="(elementi,index) in lista" :class="(lista[index].done === false) ? 'fatto' : '' "  @click="fatto(index)">
@@ -30,11 +37,22 @@
 
 
             <section class="nuovo-elemento">
-                <label for="inserisciElemnto">inserisci un nuovo elemento della lista</label>
-                <input name="inserisciElemnto" type="text" v-model="nuovoOggettoLista"  @keyup.enter="aggiungi(nuovoOggettoLista)">
 
+                <label for="inserisciElemnto">inserisci un nuovo elemento nella lista</label>
+
+                <div>
+                    <input name="inserisciElemnto" type="text" v-model="nuovoOggettoLista"  @keyup.enter="aggiungi(nuovoOggettoLista)">
+                    <button class="button-add" @click="aggiungi(nuovoOggettoLista)">inserisci</button>
+
+
+                </div>
+               
             </section>
+
+            
         </main>
+
+
     </div>
 
 
