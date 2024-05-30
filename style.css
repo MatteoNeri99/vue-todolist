@@ -22,6 +22,22 @@ ul li {
     text-align: center;
 }
 
+li i{
+    font-size: 2rem;
+}
+
+section.nuovo-elemento{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.nuovo-elemento label{
+    margin: 1rem 0;
+
+}
+
 .fatto{
     text-decoration: line-through;
 }

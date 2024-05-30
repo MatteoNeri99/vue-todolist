@@ -33,7 +33,13 @@ data() {
                 done:"false"
             },
            
-        ]
+        ],
+
+        nuovoOggettoLista: "",
+
+        
+
+
    
     }
 },
@@ -43,6 +49,22 @@ methods:{
     fatto: function(index){
 
         this.lista[index].done = !this.lista[index].done
+
+    },
+
+    rimuovi:function(index){
+        this.lista.splice(index,1)
+
+    },
+
+    aggiungi:function(oggetto){
+
+        const nuovoOggetto={
+            text: oggetto,
+            done: "false"
+        } 
+
+        this.lista.push(nuovoOggetto)
 
     }
 }
