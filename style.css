@@ -70,10 +70,21 @@ section.nuovo-elemento label{
 button.button-add{
     margin-left: 1rem;
     padding: .6rem 1rem;
+    background-color: rgb(105, 43, 2);
+    color: white;
+    border: transparent;
+}
+
+button.button-add:hover{
+    background-color:rgb(48, 26, 11);
+
 }
 
 div input{
     padding: .6rem 1rem;
+    background-color: black;
+    border: transparent;
+    color: white;
 }
 
 

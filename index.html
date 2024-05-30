@@ -41,7 +41,7 @@
                 <label for="inserisciElemnto">inserisci un nuovo elemento nella lista</label>
 
                 <div>
-                    <input name="inserisciElemnto" type="text" v-model="nuovoOggettoLista"  @keyup.enter="aggiungi(nuovoOggettoLista)">
+                    <input name="inserisciElemnto" type="text" v-model="nuovoOggettoLista"  @keyup.enter="aggiungi(nuovoOggettoLista)" placeholder="scrivi qui....">
                     <button class="button-add" @click="aggiungi(nuovoOggettoLista)">inserisci</button>
 
 
