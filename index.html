@@ -10,22 +10,21 @@
 <body>
 
     
-<div id="app">
-   
-
-    <main>
-        <section>
-            <ul>
-                <li v-for="(elementi,index) in lista">
-                    
-                    {{elementi.text}}
+    <div id="app">
 
 
-                </li>
-            </ul>
-        </section>
-    </main>
-</div>
+        <main>
+            <section class="container">
+                <ul>
+                    <li v-for="(elementi,index) in lista" :class="(lista[index].done === false) ? 'fatto' : '' "  @click="fatto(index)">
+
+                        {{elementi.text}}
+
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
 
     <script src="script.js"></script>

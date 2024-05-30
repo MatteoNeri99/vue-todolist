@@ -10,7 +10,7 @@ data() {
             {
                 text: "biscotti",
 
-                done:"false"
+                done:"true"
             },
             {
                 text: "pane",
@@ -35,6 +35,15 @@ data() {
            
         ]
    
+    }
+},
+
+methods:{
+
+    fatto: function(index){
+
+        this.lista[index].done = !this.lista[index].done
+
     }
 }
 }).mount('#app')

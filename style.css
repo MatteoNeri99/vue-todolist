@@ -10,3 +10,18 @@ div#app{
     font-size: 3rem;
 }
 
+main section.container{
+    max-width: 800px;
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.fatto{
+    text-decoration: line-through;
+}
